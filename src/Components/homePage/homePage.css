@@ -1,0 +1,14 @@
+*{
+    background: rgb(254, 255, 239);
+    margin:0;
+    padding: 0;
+}
+
+.homepage h3 {
+    font-size: 28px;
+    color: rgb(42, 82, 42);
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Kodchasan', sans-serif;
+    /* word-wrap: break-word; */
+    margin:0
+}

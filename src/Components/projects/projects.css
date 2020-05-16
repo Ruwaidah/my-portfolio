@@ -1,0 +1,15 @@
+.projects-com {
+    width: 100%;
+    height: 100vh;
+    background: rgb(226, 252, 229);
+    animation: fadeIn 1s forwards;
+    border-radius: 16px;
+
+
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+    }
+    to {opacity: 1;}
+  }
