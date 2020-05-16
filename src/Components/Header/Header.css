@@ -1,0 +1,99 @@
+.header-com {
+    height: 16vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: 'Kodchasan', sans-serif;
+}
+
+
+
+.myname-header {
+    width:20%
+}
+
+h3 {
+    text-align: start;
+}
+
+
+.nav-links {
+    height: 5.2vh;
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links div {
+    width: 18%;
+}
+
+a {
+   font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.line {
+    width:0;
+    height: 2px;
+    /* background: rgb(0, 0, 0); */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* box-shadow: rgb(108, 108, 109) 1px 1px 7px 1px; */
+}
+
+.projects {
+    left: 41%;
+    animation-name: projectsMe;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.aboutme {
+    left: 0;
+    animation-name: aboutMe;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.contactme {
+    left: 82%;
+    animation-name: contactMe;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes aboutMe {
+    from {width:0;
+        background: black;
+        box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;}
+  to {width: 18%;
+    background: black;
+    box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;}
+}
+
+@keyframes projectsMe {
+    from {width:0;
+        background: black;
+        box-shadow: rgb(58, 238, 82) 1px 1px 7px 1px;}
+    to {width: 18%;
+        background: black;
+        box-shadow: rgb(58, 238, 82) 1px 1px 7px 1px;}
+  }
+
+  @keyframes contactMe {
+    from {width:0;
+        background: black;
+        box-shadow: rgb(81, 161, 253) 1px 1px 7px 1px;}
+    to {width: 18%;
+        background: black;
+        box-shadow: rgb(73, 168, 231) 1px 1px 7px 1px;}
+  }
+
