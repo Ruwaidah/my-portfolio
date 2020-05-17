@@ -11,7 +11,7 @@ export default function AboutMe() {
                 <img src={Image} className="my-image" />
             </div>
             <div className="about-me-para">
-                <p >Hi I'm Ruwaidah, I'm a Full Stuck Web Developer and I have a bachelor's degree in mathematics and computer application as I took the 4th place of my cohort so you can tel I enjoy solving problems, I aways like to have some code to work on without coding I feel BORING ! </p>
+                <p >Hi, I'm Ruwaidah, I'm a Full Stuck Web Developer and I have a bachelor's degree in mathematics and computer application as I took the 4th place of my cohort so you can tell I enjoy solving problems, I"m life- long learner. I have learning agility and take what I have learned in the real world.</p>
             </div>
         </div>
     )
