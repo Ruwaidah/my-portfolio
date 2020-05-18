@@ -48,6 +48,8 @@ export default function Skills() {
                 <div className="skills-box">
                     <h4>Others</h4>
                     <ul className="dev-skills">
+                        <li>Less - Css Compiler</li>
+                        <li>Scss- Css Compiler</li>
                         <li>npm</li>
                         <li>Git / Github</li>
                         <li> Deployment Sites</li>
