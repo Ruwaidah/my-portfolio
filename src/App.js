@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Route path="/" component={Header} />
-      {/* <Header /> */}
       <Route exact path="/" component={AboutMe} />
       <Route exact path="/about-me" component={AboutMe} />
       <Route path="/skills" component={Skills} />
