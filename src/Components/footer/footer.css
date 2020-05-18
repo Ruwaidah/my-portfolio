@@ -1,0 +1,31 @@
+.footer-com {
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.footer-com p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+
+.links {
+    margin: 0 auto;
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+padding-top: 3px;
+}
+
+.links img{
+    width: 29px;
+}
+
+
+span {
+    font-size: 3rem;
+}

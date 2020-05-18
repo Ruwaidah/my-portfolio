@@ -1,11 +1,22 @@
-.contactme-com{
+.skills-com{
     width: 100%;
     height: 100vh;
-    background: rgb(234, 244, 255);
+    background: #f8f8e6;
     animation: fadeIn 1s forwards;
     border-radius: 16px;
 
 
+}
+.skills-com div {
+    background: #f8f8e6;}
+
+
+.skills-com h3 {
+    background: #f8f8e6;
+}
+
+img {
+    width: 40px;
 }
 
 @keyframes fadeIn {
@@ -13,7 +24,4 @@
     }
     to {opacity: 1;}
   }
-
-
-
 

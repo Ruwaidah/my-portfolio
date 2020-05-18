@@ -1,12 +1,10 @@
 .header-com {
     height: 16vh;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   font-family: 'Kodchasan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kodchasan', sans-serif;
 }
-
-
 
 .myname-header {
     width:20%
@@ -16,6 +14,11 @@ h3 {
     text-align: start;
 }
 
+h6 {
+    font-size: 1.8rem;
+    text-align: start;
+    padding-left: 10px;
+}
 
 .nav-links {
     height: 5.2vh;
@@ -31,22 +34,36 @@ h3 {
 }
 
 a {
-   font-size: 2.2rem;
+   font-size: 1.8rem;
     color: rgb(0, 0, 0);
 }
 
 .line {
     width:0;
     height: 2px;
-    /* background: rgb(0, 0, 0); */
     position: absolute;
     left: 0;
     top: 0;
-    /* box-shadow: rgb(108, 108, 109) 1px 1px 7px 1px; */
+}
+
+
+.home-line {
+    width: 18%;
+    background: hsl(315, 93%, 61%) ;
+    /* height: 4px; */
+    /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px; */
+}
+
+.skills {
+    left: 28%;
+    animation-name: myskills;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .projects {
-    left: 41%;
+    left: 55%;
     animation-name: projectsMe;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -62,7 +79,7 @@ a {
 }
 
 .contactme {
-    left: 82%;
+    left: 83%;
     animation-name: contactMe;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -70,30 +87,97 @@ a {
 }
 
 
+
+
 @keyframes aboutMe {
-    from {width:0;
-        background: black;
-        box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;}
-  to {width: 18%;
-    background: black;
-    box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;}
+    0% {width:0;
+        background: hsl(312, 100%, 99%);
+        /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px; */
+    }
+    20% {
+        background: hsl(313, 92%, 86%);
+    }
+    40% {
+        background: hsl(313, 96%, 81%);
+    }
+    60% {
+        background: hsl(313, 87%, 79%);
+    }
+    80% {
+        background: hsl(313, 90%, 62%);
+    }
+  100% {width: 16%;
+    background: hsl(315, 93%, 52%);
+    /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;} */
+}
+}
+
+@keyframes myskills {
+    0% {width:0;
+        background: hsl(58, 78%, 91%);
+        /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px; */
+    }
+    20% {
+        background: hsl(66, 84%, 76%);
+    }
+    40% {
+        background: hsl(58, 78%, 91%);
+    }
+    60% {
+        background: hsl(58, 91%, 78%);
+    }
+    80% {
+        background: hsl(58, 78%, 66%);
+    }
+  100% {width: 16%;
+    background: hsl(58, 91%, 54%);;
+    /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;} */
+}
 }
 
 @keyframes projectsMe {
-    from {width:0;
-        background: black;
-        box-shadow: rgb(58, 238, 82) 1px 1px 7px 1px;}
-    to {width: 18%;
-        background: black;
-        box-shadow: rgb(58, 238, 82) 1px 1px 7px 1px;}
+    0% {width:0;
+        background: hsl(104, 32%, 88%);
+        /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px; */
+    }
+    20% {
+        background: hsl(117, 76%, 88%);
+    }
+    40% {
+        background: hsl(93, 54%, 64%);
+    }
+    60% {
+        background: hsl(115, 64%, 70%);
+    }
+    80% {
+        background: hsl(110, 57%, 54%);
+    }
+  100% {width: 16%;
+    background: hsl(115, 90%, 39%);
+    /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;} */
+}
   }
 
   @keyframes contactMe {
-    from {width:0;
-        background: black;
-        box-shadow: rgb(81, 161, 253) 1px 1px 7px 1px;}
-    to {width: 18%;
-        background: black;
-        box-shadow: rgb(73, 168, 231) 1px 1px 7px 1px;}
+    0% {width:0;
+        background: hsl(312, 100%, 99%);
+        /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px; */
+    }
+    20% {
+        background: hsl(219, 69%, 82%);
+    }
+    40% {
+        background: hsl(218, 84%, 80%);
+    }
+    60% {
+        background: hsl(218, 100%, 73%);
+    }
+    80% {
+        background: hsl(218, 84%, 70%);
+        }
+  100% {width: 16%;
+    background: hsl(218, 76%, 53%);
+    /* box-shadow:  hsl(315, 93%, 61%) 1px 1px 7px 1px;} */
+}
   }
 
