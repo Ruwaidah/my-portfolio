@@ -11,8 +11,8 @@ export default function Footer() {
                 <p>Ruwaidah Alfakhri</p>
             </div>
             <div className="links">
-                <img src={Linkedin} />
-                <img src={Github} />
+                <a href="https://github.com/Ruwaidah" target="_blank"> <img src={Linkedin} /></a>
+                <a href="https://www.linkedin.com/in/ruwaidah-a-930b9a8b/" target="_blank"><img src={Github} /></a>
             </div>
         </div>
     )
