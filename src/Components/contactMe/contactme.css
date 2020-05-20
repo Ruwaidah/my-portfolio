@@ -22,6 +22,7 @@
 .contact-links-dev .links,
 .github-linkedin,
 .contactme-com h4,
+.contactme-com .send-me-mail,
 .contactme-com form .field,
 .contactme-com form {
   background: rgb(234, 244, 255);
@@ -58,13 +59,17 @@
   margin-right: 10px;
 }
 
-.contactme-com h4 {
+.contactme-com .send-me-mail h4 {
   width: 46%;
   text-align: start;
   margin: 0 auto;
+  font-size: 2rem;
 }
-
-.contactme-com form {
+.contactme-com .send-me-mail {
+  display: flex;
+  flex-direction: column;
+}
+.contactme-com .send-me-mail form {
   width: 46%;
   margin: 0 auto;
   display: flex;
@@ -118,4 +123,15 @@
   border-radius: 2px;
   background: #8dc5df;
   box-shadow: 1px 1px 10px 4px lightgrey;
+}
+
+.contactme-com .thank-you-msg {
+  background: rgb(234, 244, 255);
+  font-size: 1.8rem;
+  color: green;
+  margin: 0 auto;
+}
+
+.contactme-com .loading {
+  color: red;
 }
