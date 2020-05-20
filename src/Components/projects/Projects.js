@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './projects.css'
 import Refugee from '../images/refugee.png'
 import Party from '../images/party.png'
@@ -17,7 +17,7 @@ export default function Projects() {
         project4: false
     })
     const showOne = (event, project) => {
-        if (project == "proj1") {
+        if (project === "proj1") {
             setShowProject({
                 allproject: false,
                 project1: true,
@@ -27,7 +27,7 @@ export default function Projects() {
             })
         }
 
-        else if (project == "proj2") {
+        else if (project === "proj2") {
             setShowProject({
                 allproject: false,
                 project1: false,
@@ -37,7 +37,7 @@ export default function Projects() {
             })
         }
 
-        else if (project == "proj3") {
+        else if (project === "proj3") {
             setShowProject({
                 allproject: false,
                 project1: false,
@@ -46,7 +46,7 @@ export default function Projects() {
                 project4: false
             })
         }
-        else if (project == "proj4") {
+        else if (project === "proj4") {
             setShowProject({
                 allproject: false,
                 project1: false,
@@ -55,7 +55,7 @@ export default function Projects() {
                 project4: true
             })
         }
-        else if (project == "all") {
+        else if (project === "all") {
             setShowProject({
                 allproject: true,
                 project1: false,
@@ -73,17 +73,20 @@ export default function Projects() {
                 <h5>Projects at Lambda School </h5>
             </div>
             <div id="slideshow">
-                <div class={showProject.allproject ? "slide-wrapper" : showProject.project1 ? "slide-wrapper-proj1" : showProject.project2 ? "slide-wrapper-proj2" :
+                <div className={showProject.allproject ? "slide-wrapper" : showProject.project1 ? "slide-wrapper-proj1" : showProject.project2 ? "slide-wrapper-proj2" :
                     showProject.project3 ? "slide-wrapper-proj3" :
                         showProject.project4 ? "slide-wrapper-proj4" : null}>
-                    <div class="slide">
+                    <div className="slide">
                         <div className="image-title">
                             <a
                                 href="https://frosty-galileo-c1f29c.netlify.com/index.html"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {" "}
-                                <img id="projectImage" src={Refugee} />
+                                <img id="projectImage" src={Refugee}
+                                    alt="refugees stroies"
+                                />
                             </a>
                             <p className="project-title">Refugee Stories </p>
                         </div>
@@ -94,12 +97,15 @@ export default function Projects() {
                             <li>Some javaScipt in the about page.</li>
                         </ul>
                     </div>
-                    <div class="slide">
+                    <div className="slide">
                         <div className="image-title">
                             <a href="https://condescending-goldwasser-1df579.netlify.com/"
-                                target="_blank">
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 {" "}
-                                <img id="projectImage" src={Party} />
+                                <img id="projectImage" src={Party}
+                                    alt="part-planner-project"
+                                />
                             </a>
                             <p className="pt-2">Party Planner</p>
                         </div>
@@ -110,14 +116,16 @@ export default function Projects() {
                             <li>Styled components library for styling. </li>
                         </ul>
                     </div>
-                    <div class="slide">
+                    <div className="slide">
                         <div className="image-title">
                             <a
                                 href="https://child-nutrition-status-tracking.now.sh/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {" "}
-                                <img id="projectImage" src={Child} />
+                                <img id="projectImage" src={Child}
+                                    alt="child-nutrition" />
                             </a>
                             <p className="pt-2">Malo (Child-Nutrition-Status-Tracking)</p>
                         </div>
@@ -139,11 +147,12 @@ export default function Projects() {
                             </li>
                         </ul>
                     </div>
-                    <div class="slide">
+                    <div className="slide">
                         <div className="image-title">
-                            <a href="https://mychifport.now.sh" target="_blank">
+                            <a href="https://mychifport.now.sh" target="_blank"
+                                rel="noopener noreferrer">
                                 {" "}
-                                <img id="projectImage" src={Chief} />
+                                <img id="projectImage" src={Chief} alt="Let's Eat" />
                             </a>
                             <p className="pt-2">Let's Eat </p>
                         </div>
@@ -176,7 +185,7 @@ export default function Projects() {
             </div>
             <div className={showProject.allproject ? "show-visible playAgin" : "playAgin"} onClick={(e) => showOne(e, "all")}>
                 {/* <p>Play SlidShow</p> */}
-                <img src={Play} />
+                <img src={Play} alt="play-icon" />
             </div>
         </div>
     )
