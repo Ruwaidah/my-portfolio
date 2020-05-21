@@ -358,6 +358,10 @@
   animation: playbtn 1s forwards;
 }
 
+#play2 {
+  width: 24px;
+}
+
 @keyframes playbtn {
   from {
     opacity: 0;

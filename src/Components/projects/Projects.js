@@ -5,6 +5,7 @@ import Party from "../images/party.png";
 import Child from "../images/child.png";
 import Chief from "../images/chief.png";
 import Play from "../images/play.png";
+import Play1 from "../images/play1.svg";
 
 export default function Projects() {
   const [showProject, setShowProject] = useState({
@@ -210,7 +211,7 @@ export default function Projects() {
         onClick={(e) => showOne(e, "all")}
       >
         {/* <p>Play SlidShow</p> */}
-        <img src={Play} alt="play-icon" />
+        <img src={Play1} alt="play-icon" id="play2" />
       </div>
     </div>
   );
