@@ -5,11 +5,12 @@
   justify-content: center;
   align-items: center;
   font-family: "Kodchasan", sans-serif;
+  margin-top: 60px;
 }
 
 .footer-com p {
   font-size: 1.4rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .links {
