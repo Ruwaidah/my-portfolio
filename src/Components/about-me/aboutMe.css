@@ -18,7 +18,7 @@
 
 .about-me-para {
   /* background: rgb(250, 232, 238); */
-  width: 54%;
+  width: 70%;
   margin-left: 20px;
 }
 
@@ -44,5 +44,63 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  .about-me-para {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .about-me-para {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutme-com {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .aboutme-com div {
+    text-align: start;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutme-com {
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutme-com div {
+    width: 20%;
+    margin: 0;
+  }
+  .aboutme-com .about-me-para .my-image {
+    width: 120px;
+  }
+
+  .aboutme-com .about-me-para {
+    width: 90%;
+  }
+
+  .aboutme-com .about-me-para p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutme-com .about-me-para .my-image {
+    width: 100px;
+  }
+  .aboutme-com .about-me-para {
+    width: 96%;
+  }
+  .aboutme-com .about-me-para p {
+    font-size: 1.6rem;
+  }
 }
