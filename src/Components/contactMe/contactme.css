@@ -38,23 +38,28 @@
 
 .contact-links-dev .links {
   display: flex;
-  width: 40%;
+  width: 52%;
   align-items: center;
   margin-top: 2%;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .github-linkedin {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   background: rgb(234, 244, 255);
 }
+
+.github-linkedin:nth-child(2) {
+  margin-left: 60px;
+}
+
 .github-linkedin a,
 .github-linkedin img {
   background: rgb(234, 244, 255);
 }
-.github-linkedin p {
+.github-linkedin a {
   font-size: 2.4rem;
   margin-right: 10px;
 }
@@ -134,4 +139,99 @@
 
 .contactme-com .loading {
   color: red;
+}
+
+/* ******************************************* media **************************** */
+
+@media (max-width: 1080px) {
+  .contact-links-dev .links {
+    width: 82%;
+    /* justify-content: space-between; */
+  }
+  .contactme-com .send-me-mail {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contactme-com .send-me-mail h4 {
+    width: 80%;
+  }
+
+  .contactme-com .send-me-mail form {
+    width: 80%;
+    /* justify-content: center; */
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  #submit {
+    width: 610px;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-links-dev .links {
+    width: 90%;
+  }
+  .github-linkedin a {
+    font-size: 1.8rem;
+  }
+
+  .contactme-com .send-me-mail h4 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contactme-com .send-me-mail form {
+    width: 90%;
+  }
+
+  #message textarea {
+    width: 100%;
+  }
+  #submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #message textarea {
+    height: 180px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-links-dev .links a {
+    margin: 0;
+  }
+  .contact-links-dev .links {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .contactme-com .send-me-mail form .field {
+    width: 80%;
+  }
+  .contactme-com .send-me-mail form .field input {
+    height: 34px;
+    width: 100%;
+  }
+  #message textarea {
+    height: 140px;
+  }
+}
+
+@media (max-width: 340px) {
+  .github-linkedin:nth-child(2) {
+    margin: 0;
+  }
+
+  .contact-links-dev .links {
+    justify-content: space-between;
+  }
 }

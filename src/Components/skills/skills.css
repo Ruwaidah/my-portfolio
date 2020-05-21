@@ -1,119 +1,163 @@
-.skills-com{
-    width: 100%;
-    min-height: 100vh;
-    background: #f8f8e6;
-    animation: fadeIn 1s forwards;
-    border-radius: 16px;
-    font-family: 'Kodchasan', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
-
+.skills-com {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f8e6;
+  animation: fadeIn 1s forwards;
+  border-radius: 16px;
+  font-family: "Kodchasan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
 }
-
 
 ul li {
-    font-size: 1.8rem;
-    background: #f8f8e6;
-    margin-left: 18px;
-    padding-bottom: 10px;
+  font-size: 1.8rem;
+  background: #f8f8e6;
+  margin-left: 18px;
+  padding-bottom: 10px;
 }
-
-
 
 .skills-com div {
-    width: 90%;
-    background: #f8f8e6;}
-
-
-.skills-com h3 {
-    background: #f8f8e6;
-    text-align: center;
-    font-size: 3.2rem;
-
+  width: 90%;
+  background: #f8f8e6;
 }
 
+.skills-com h3 {
+  background: #f8f8e6;
+  text-align: center;
+  font-size: 3.2rem;
+}
 
 .higher-ed {
-    padding-top: 6%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  padding-top: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .higher-ed h5 {
-    font-size: 2rem;
-    background: #f8f8e6;
-    padding-bottom: 20px;
-
+  font-size: 2rem;
+  background: #f8f8e6;
+  padding-bottom: 20px;
 }
 
 .higher-ed ul {
-    background: #f8f8e6;
-    display: flex;
-    align-items: center;
-
+  background: #f8f8e6;
+  display: flex;
+  align-items: center;
 }
 
 .tech-skills-h5 {
-    background: #f8f8e6;
-    font-size: 2rem;
-    width: 90%;
-    padding-top: 4%;
-    text-align: start;
-
+  background: #f8f8e6;
+  font-size: 2rem;
+  width: 90%;
+  padding-top: 4%;
+  text-align: start;
 }
-
 
 .skills-com .full-stack {
-      padding-top: 3%;
-      display: flex;
-      width:80%;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  }
-
-.full-stack .skills-box {
-      border: rgb(0, 0, 0) 2px solid;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 24px;
-      border-radius: 4px;
-      margin-bottom: 4%;
-  }
-
-
-.skills-box h4 {
-    width: 100%;
-    padding-bottom: 20px;
-    background: #f8f8e6;
-    font-size: 2.2rem;
-    text-align: center;
+  padding-top: 3%;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.full-stack .skills-box {
+  border: rgb(0, 0, 0) 2px solid;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border-radius: 4px;
+  margin-bottom: 4%;
+}
+
+.skills-box h4 {
+  width: 100%;
+  padding-bottom: 20px;
+  background: #f8f8e6;
+  font-size: 2.2rem;
+  text-align: center;
+}
 
 .dev-skills {
-    margin-left: 6%;
+  margin-left: 6%;
+  display: flex;
+  background: #f8f8e6;
+  flex-direction: column;
+}
+
+.dev-skills li {
+  background: #f8f8e6;
+  margin: 0;
+  text-align: start;
+  /* font-size: 1.8rem; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ******************************** Media **************************** */
+
+@media (max-width: 900px) {
+  .skills-com .full-stack {
+    width: 96%;
+    justify-content: space-evenly;
+  }
+
+  .full-stack .skills-box {
     display: flex;
-    background: #f8f8e6;
-    flex-direction: column;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 10px;
   }
 
-  .dev-skills li {
-    background: #f8f8e6;
-    margin: 0;
+  .dev-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .full-stack .skills-box .dev-skills li {
+    margin-left: 10px;
+    width: 42%;
+    font-size: 1.6rem;
+  }
+
+  .higher-ed ul li {
     text-align: start;
-    /* font-size: 1.8rem; */
+  }
+}
+
+@media (max-width: 550px) {
+  .skills-com div h3 {
+    font-size: 2rem;
+  }
+  .higher-ed h5 {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+  .higher-ed ul li {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .full-stack .skills-box {
+    width: 90%;
   }
 
-
-
-
-  @keyframes fadeIn {
-    from {opacity: 0;
-    }
-    to {opacity: 1;}
+  .full-stack .skills-box .dev-skills li {
+    width: 100%;
   }
+}

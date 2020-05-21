@@ -9,9 +9,8 @@ export default function ContactMe() {
   const { handleSubmit, register, errors } = useForm();
   const [mailSent, setMailSent] = useState(false);
   const [loading, setLoading] = useState(false);
-
   const path = process.env.REACT_APP_BASE_URL;
-  console.log(mailSent);
+
   const onSubmit = (values) => {
     setLoading(true);
     axios
@@ -32,7 +31,6 @@ export default function ContactMe() {
       <div className="contact-links-dev">
         <div className="links">
           <div className="github-linkedin">
-            <p>Github</p>
             <a
               href="https://github.com/Ruwaidah"
               target="_blank"
@@ -41,10 +39,16 @@ export default function ContactMe() {
               {" "}
               <img src={Github} alt="github-logo" />
             </a>
+            <a
+              href="https://github.com/Ruwaidah"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </div>
           <div className="github-linkedin">
             {" "}
-            <p>Linkedin</p>{" "}
             <a
               href="https://www.linkedin.com/in/ruwaidah-a-930b9a8b/"
               target="_blank"
@@ -52,6 +56,13 @@ export default function ContactMe() {
             >
               <img src={Linkedin} alt="linkedin-logo" />
             </a>
+            <a
+              href="https://www.linkedin.com/in/ruwaidah-a-930b9a8b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>{" "}
           </div>
         </div>
       </div>
@@ -115,7 +126,7 @@ export default function ContactMe() {
               )}
               {errors.subject && <p>{errors.subject.message}</p>}
             </div>
-            <div className="field">
+            <div className="field" id="message">
               <textarea
                 name="msg"
                 rows="6"
