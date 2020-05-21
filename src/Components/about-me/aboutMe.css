@@ -1,53 +1,48 @@
- .aboutme-com {
-    font-family: 'Oxygen', sans-serif;
-     width: 100%;
-     opacity: 0;
-     display: flex;
-     min-height: 60vh;
-     justify-content: center;
-     align-items: flex-start;
-     animation: fadeIn 1s forwards;
-     margin: 0 auto;
-     background: rgb(252, 231, 238);
-     border-radius: 16px;
-     padding-top: 20%;
-     
- }
- .aboutme-com  div {
-    background: rgb(252, 231, 238);
+.aboutme-com {
+  font-family: "Oxygen", sans-serif;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 1s forwards;
+  margin: 0 auto;
+  background: rgb(252, 231, 238);
+  border-radius: 16px;
+  padding-top: 20%;
 }
- 
-
- .about-me-para {
-    /* background: rgb(250, 232, 238); */
-    width: 54%;
-    margin-left: 20px;
-
- }
- 
-
- .about-me-para p {
-    background: rgb(252, 231, 238);
-    font-size: 2.2rem;
-    line-height: 3.8rem;
-    text-align: start;
-
+.aboutme-com div {
+  background: rgb(252, 231, 238);
 }
 
+.about-me-para {
+  /* background: rgb(250, 232, 238); */
+  width: 54%;
+  margin-left: 20px;
+}
 
-
+.about-me-para p {
+  background: rgb(252, 231, 238);
+  font-size: 2.2rem;
+  line-height: 3.8rem;
+  text-align: start;
+}
 
 .my-image {
-    width:150px;
-    border-radius: 6px;
-    background: rgb(252, 231, 238);
-
-
+  width: 150px;
+  border-radius: 6px;
+  background: rgb(252, 231, 238);
 }
 
-
 @keyframes fadeIn {
-    from {opacity: 0;
-    }
-    to {opacity: 1;}
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+}
