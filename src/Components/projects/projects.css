@@ -353,7 +353,7 @@
   box-shadow: rgb(88, 228, 76) 1px 1px 10px 6px;
 }
 .playAgin {
-  margin: 30px auto 40px auto;
+  margin: 0 auto 40px auto;
   opacity: 0;
   animation: playbtn 1s forwards;
 }
