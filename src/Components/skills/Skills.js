@@ -11,7 +11,7 @@ export default function Skills() {
         <h5>Higher Education:</h5>
         <ul>
           <li className="graduate">
-            Bachelor's degree in Mathematics and Computer Science .
+            Bachelor's degree in Mathematics and Computer Science.
           </li>
         </ul>
       </div>

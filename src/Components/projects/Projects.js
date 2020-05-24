@@ -63,6 +63,27 @@ export default function Projects() {
       <div className="projects-header">
         <h5>Projects at Lambda School </h5>
       </div>
+      <div className="dot-btns">
+        <div
+          className={showProject.allproject ? "pro-btn active-btn" : "dontShow"}
+        ></div>
+        <div
+          className={showProject.project1 ? "active pro-btn" : "pro-btn"}
+          onClick={(e) => showOne(e, "proj1")}
+        ></div>
+        <div
+          className={showProject.project2 ? "active pro-btn" : "pro-btn"}
+          onClick={(e) => showOne(e, "proj2")}
+        ></div>
+        <div
+          className={showProject.project3 ? "active pro-btn" : "pro-btn"}
+          onClick={(e) => showOne(e, "proj3")}
+        ></div>
+        <div
+          className={showProject.project4 ? "active pro-btn" : "pro-btn"}
+          onClick={(e) => showOne(e, "proj4")}
+        ></div>
+      </div>
       <div id="slideshow">
         <div
           className={
@@ -183,7 +204,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="dot-btns">
+      {/* <div className="dot-btns">
         <div
           className={showProject.allproject ? "pro-btn active-btn" : "dontShow"}
         ></div>
@@ -203,7 +224,7 @@ export default function Projects() {
           className={showProject.project4 ? "active pro-btn" : "pro-btn"}
           onClick={(e) => showOne(e, "proj4")}
         ></div>
-      </div>
+      </div> */}
       <div
         className={
           showProject.allproject ? "show-visible playAgin" : "playAgin"
