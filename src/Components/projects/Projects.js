@@ -74,6 +74,8 @@ export default function Projects() {
       });
     }
   };
+
+  console.log(showProject);
   return (
     <div className="projects-com">
       <div className="projects-header">
@@ -138,7 +140,7 @@ export default function Projects() {
               <li>Semantic html.</li>
               <li>Style with Css.</li>
               <li>Media queries for fully responsive web design. </li>
-              <li>Some javaScipt in the about page.</li>
+              <li>Some javaScipt for animation.</li>
             </ul>
           </div>
           <div className="slide">
@@ -173,23 +175,15 @@ export default function Projects() {
               <p className="pt-2">Malo (Child-Nutrition-Status-Tracking)</p>
             </div>
             <ul className="dev-skills" id="malo">
+              <li>Built with HTML, CSS, React, Node.</li>
               <li>
-                Front End
-                <ul>
-                  <li>Built with React.</li>
-                  <li>CRUD operations.</li>
-                  <li>Token for authorization. </li>
-                  <li>Redux for state management.</li>
-                </ul>
+                Use the CRUD operations to create, get, update, and delete data.
               </li>
-              <li>
-                Back End
-                <ul>
-                  <li>Built with Node Js.</li>
-                  <li>Express for Routing.</li>
-                  <li>Knex and PostgreSQL for DataBase.</li>
-                </ul>
-              </li>
+              <li>Use Token for authorization. </li>
+              <li>Redux for state management.</li>
+              <li>Express for Routing.</li>
+              <li>Knex and PostgreSQL for DataBase.</li>
+              <li>restrict access to resources, for Country user.</li>
             </ul>
           </div>
           <div className="slide">
@@ -205,23 +199,17 @@ export default function Projects() {
               <p className="pt-2">Let's Eat </p>
             </div>
             <ul className="dev-skills" id="malo2">
+              <li>Built with HTML, CSS, React, Node.</li>
               <li>
-                Front End
-                <ul>
-                  <li>Built with React.</li>
-                  <li>CRUD Operations.</li>
-                  <li>Token for authorization. </li>
-                  <li>Redux for state management.</li>
-                </ul>
+                Built a form to input new recipe and send the data with post
+                request.
               </li>
-              <li>
-                Back End
-                <ul>
-                  <li>Built with Node Js.</li>
-                  <li>Express for Routing.</li>
-                  <li>Knex and PostgreSQL for DataBase.</li>
-                </ul>
-              </li>
+              <li>User Can upload image for the recipe.</li>
+              <li>Token for authorization. </li>
+              <li>Redux for state management.</li>
+              <li>Express for Routing.</li>
+              <li>Knex and PostgreSQL for DataBase.</li>
+              <li>Use cloudinary to upload images</li>
             </ul>
           </div>
           <div className="slide">
@@ -238,28 +226,20 @@ export default function Projects() {
               <p className="pt-2">Movie Knight </p>
             </div>
             <ul className="dev-skills" id="malo3">
+              <li>Built with HTML, CSS, React, Node.</li>
+              <li>mobile first application</li>
               <li>
-                Front End
-                <ul>
-                  <li>mobile first application</li>
-                  <li>Built with React.</li>
-                  <li>CRUD Operations.</li>
-                  <li>Use Token for authorization. </li>
-                  <li>Redux for state management.</li>
-                </ul>
+                user can search for a movies by Zipcode with a third part API.
               </li>
+              <li>Use oauth to signup/login with google. </li>
+              <li>Redux for state management.</li>
+              <li>Filter Movies with the selected time, date, and seats.</li>
+              <li>Use oauth to signup/login with google.</li>
               <li>
-                Back End
-                <ul>
-                  <li>Built with Node Js and Express.</li>
-                  <li>Use oauth to signup/login with google.</li>
-                  <li>
-                    Use third party API's to show movies that's in theater now
-                  </li>
-                  <li>Upload profile image with cloudinary.</li>
-                  <li>Knex and PostgreSQL for DataBase.</li>
-                </ul>
+                Use third party API's to show movies that's in theater now
               </li>
+              <li>Upload profile image with cloudinary.</li>
+              <li>Knex and PostgreSQL for DataBase.</li>
             </ul>
           </div>
         </div>
