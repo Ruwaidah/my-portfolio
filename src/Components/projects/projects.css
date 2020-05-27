@@ -196,38 +196,6 @@
   margin-top: 24px;
 }
 
-#malo,
-#malo2,
-#malo3 {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* border: 1px solid black; */
-  /* width: 660px; */
-  width: 600px;
-  justify-content: center;
-  align-items: center;
-}
-
-/* #malo li,
-#malo2 li,
-#malo3 li {
-  width: 50%;
-  background: rgb(226, 252, 229);
-} */
-/* #malo li ul,
-#malo2 li ul,
-#malo3 li ul {
-  width: 100%;
-  margin-left: 20px;
-  background: rgb(226, 252, 229);
-} */
-
-/* #malo li ul li,
-#malo2 li ul li,
-#malo3 li ul li { */
-/* text-align: end; */
-/* width: 100%;
-} */
 .slide .dev-skills li {
   width: 100%;
 
@@ -366,6 +334,7 @@
   }
   to {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -379,6 +348,7 @@
 }
 
 .show-visible {
+  visibility: hidden;
   animation: playbtnfadeout 1s forwards;
 }
 @keyframes playbtnfadeout {
@@ -419,7 +389,7 @@
 
   .slide {
     float: left;
-    min-height: 600px;
+    /* min-height: 600px; */
     width: 800px;
     background: rgb(226, 252, 229);
   }
@@ -503,28 +473,6 @@
     width: 100%;
 
     margin-top: 30px;
-  }
-  /* #malo ul {
-    width: 38%;
-  } */
-
-  #malo,
-  #malo2,
-  #malo3 {
-    width: 100%;
-  }
-
-  #malo li,
-  #malo2 li,
-  #malo3 li {
-    width: 46%;
-  }
-
-  #malo li ul li,
-  #malo2 li ul li,
-  #malo3 li ul li {
-    /* width: 50%; */
-    font-size: 1.5rem;
   }
 
   @keyframes slide {
@@ -656,26 +604,20 @@
   }
   .slide {
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     height: auto;
+    border-bottom: 2px solid black;
   }
 
-  #malo,
-  #malo2,
-  #malo3 {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 10px 0 60px 0;
-    list-style-type: none;
+  .slide:nth-child(5) {
+    border: none;
   }
 
-  .dev-skills,
-  #malo li,
-  #malo2 li,
-  #malo3 li {
-    width: 100%;
+  .image-title p {
+    font-size: 1.8rem;
+  }
+  .slide .dev-skills li {
+    font-size: 1.6rem;
   }
 
   .dot-btns,
@@ -683,8 +625,3 @@
     display: none;
   }
 }
-
-/* #movie-knight {
-  width: 50px;
-  height: 50px;
-} */

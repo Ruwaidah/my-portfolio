@@ -106,6 +106,15 @@ export default function Projects() {
           onClick={(e) => showOne(e, "proj5")}
         ></div>
       </div>
+      <div
+        className={
+          showProject.allproject ? "show-visible playAgin" : "playAgin"
+        }
+        onClick={(e) => showOne(e, "all")}
+      >
+        {/* <p>Play SlidShow</p> */}
+        <img src={Play1} alt="play-icon" id="play2" />
+      </div>
       <div id="slideshow">
         <div
           className={
@@ -156,9 +165,13 @@ export default function Projects() {
               <p className="pt-2">Party Planner</p>
             </div>
             <ul className="dev-skills">
+              <li>Built with HTML, CSS, React, Node.</li>
               <li>Team work project.</li>
-              <li>Built with react.</li>
-              <li>Form management.</li>
+              <li>Worked in the front end.</li>
+              <li>
+                make POST requests to pass data collected from a form to a
+                database.
+              </li>
               <li>Styled components library for styling. </li>
             </ul>
           </div>
@@ -174,7 +187,7 @@ export default function Projects() {
               </a>
               <p className="pt-2">Malo (Child-Nutrition-Status-Tracking)</p>
             </div>
-            <ul className="dev-skills" id="malo">
+            <ul className="dev-skills">
               <li>Built with HTML, CSS, React, Node.</li>
               <li>
                 Use the CRUD operations to create, get, update, and delete data.
@@ -198,7 +211,7 @@ export default function Projects() {
               </a>
               <p className="pt-2">Let's Eat </p>
             </div>
-            <ul className="dev-skills" id="malo2">
+            <ul className="dev-skills">
               <li>Built with HTML, CSS, React, Node.</li>
               <li>
                 Built a form to input new recipe and send the data with post
@@ -225,7 +238,7 @@ export default function Projects() {
               </a>
               <p className="pt-2">Movie Knight </p>
             </div>
-            <ul className="dev-skills" id="malo3">
+            <ul className="dev-skills">
               <li>Built with HTML, CSS, React, Node.</li>
               <li>mobile first application</li>
               <li>
@@ -265,15 +278,6 @@ export default function Projects() {
           onClick={(e) => showOne(e, "proj4")}
         ></div>
       </div> */}
-      <div
-        className={
-          showProject.allproject ? "show-visible playAgin" : "playAgin"
-        }
-        onClick={(e) => showOne(e, "all")}
-      >
-        {/* <p>Play SlidShow</p> */}
-        <img src={Play1} alt="play-icon" id="play2" />
-      </div>
     </div>
   );
 }
