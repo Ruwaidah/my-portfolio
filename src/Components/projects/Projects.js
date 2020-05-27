@@ -6,6 +6,7 @@ import Child from "../images/child.png";
 import Chief from "../images/chief.png";
 import Play from "../images/play.png";
 import Play1 from "../images/play1.svg";
+import Movie from "../images/movie.png";
 
 export default function Projects() {
   const [showProject, setShowProject] = useState({
@@ -14,6 +15,7 @@ export default function Projects() {
     project2: false,
     project3: false,
     project4: false,
+    project5: false,
   });
   const showOne = (event, project) => {
     if (project === "proj1") {
@@ -23,6 +25,7 @@ export default function Projects() {
         project2: false,
         project3: false,
         project4: false,
+        project5: false,
       });
     } else if (project === "proj2") {
       setShowProject({
@@ -31,6 +34,7 @@ export default function Projects() {
         project2: true,
         project3: false,
         project4: false,
+        project5: false,
       });
     } else if (project === "proj3") {
       setShowProject({
@@ -39,6 +43,7 @@ export default function Projects() {
         project2: false,
         project3: true,
         project4: false,
+        project5: false,
       });
     } else if (project === "proj4") {
       setShowProject({
@@ -47,6 +52,16 @@ export default function Projects() {
         project2: false,
         project3: false,
         project4: true,
+        project5: false,
+      });
+    } else if (project === "proj5") {
+      setShowProject({
+        allproject: false,
+        project1: false,
+        project2: false,
+        project3: false,
+        project4: false,
+        project5: true,
       });
     } else if (project === "all") {
       setShowProject({
@@ -55,6 +70,7 @@ export default function Projects() {
         project2: false,
         project3: false,
         project4: false,
+        project5: false,
       });
     }
   };
@@ -83,6 +99,10 @@ export default function Projects() {
           className={showProject.project4 ? "active pro-btn" : "pro-btn"}
           onClick={(e) => showOne(e, "proj4")}
         ></div>
+        <div
+          className={showProject.project5 ? "active pro-btn" : "pro-btn"}
+          onClick={(e) => showOne(e, "proj5")}
+        ></div>
       </div>
       <div id="slideshow">
         <div
@@ -97,6 +117,8 @@ export default function Projects() {
               ? "slide-wrapper-proj3"
               : showProject.project4
               ? "slide-wrapper-proj4"
+              : showProject.project5
+              ? "slide-wrapper-proj5"
               : null
           }
         >
@@ -163,7 +185,7 @@ export default function Projects() {
               <li>
                 Back End
                 <ul>
-                  <li>Builyt with Nofe Js.</li>
+                  <li>Built with Node Js.</li>
                   <li>Express for Routing.</li>
                   <li>Knex and PostgreSQL for DataBase.</li>
                 </ul>
@@ -195,8 +217,46 @@ export default function Projects() {
               <li>
                 Back End
                 <ul>
-                  <li>Builyt with Nofe Js.</li>
+                  <li>Built with Node Js.</li>
                   <li>Express for Routing.</li>
+                  <li>Knex and PostgreSQL for DataBase.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="slide">
+            <div className="image-title">
+              <a
+                id="movie-knight"
+                href="https://movie-slater-fe-lac.now.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img id="projectImage" src={Movie} alt="Let's Eat" />
+              </a>
+              <p className="pt-2">Movie Knight </p>
+            </div>
+            <ul className="dev-skills" id="malo3">
+              <li>
+                Front End
+                <ul>
+                  <li>mobile first application</li>
+                  <li>Built with React.</li>
+                  <li>CRUD Operations.</li>
+                  <li>Use Token for authorization. </li>
+                  <li>Redux for state management.</li>
+                </ul>
+              </li>
+              <li>
+                Back End
+                <ul>
+                  <li>Built with Node Js and Express.</li>
+                  <li>Use oauth to signup/login with google.</li>
+                  <li>
+                    Use third party API's to show movies that's in theater now
+                  </li>
+                  <li>Upload profile image with cloudinary.</li>
                   <li>Knex and PostgreSQL for DataBase.</li>
                 </ul>
               </li>

@@ -39,8 +39,9 @@
 
 .slide-wrapper {
   background: rgb(226, 252, 229);
-  width: 4000px;
-  animation: slide 18s ease infinite;
+  width: 5000px;
+  animation: slide 26s ease infinite 2s;
+  /* animation-delay: 2s; */
 }
 
 .slide-wrapper-proj1 {
@@ -102,7 +103,24 @@
   opacity: 0;
   animation: fadeIn4 1s forwards;
 }
+
 @keyframes fadeIn4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-wrapper-proj5 {
+  background: rgb(226, 252, 229);
+  width: 5000px;
+  margin-left: -4000px;
+  opacity: 0;
+  animation: fadeIn5 1s forwards;
+}
+@keyframes fadeIn5 {
   from {
     opacity: 0;
   }
@@ -135,26 +153,23 @@
   } */
 
 @keyframes slide {
+  0% {
+    margin-left: 0;
+  }
   20% {
-    margin-left: 0px;
-  }
-  30% {
     margin-left: -1000px;
   }
-  50% {
-    margin-left: -1000px;
+  40% {
+    margin-left: -2000px;
   }
   60% {
-    margin-left: -2000px;
-  }
-  70% {
-    margin-left: -2000px;
+    margin-left: -3000px;
   }
   80% {
-    margin-left: -3000px;
+    margin-left: -4000px;
   }
-  90% {
-    margin-left: -3000px;
+  95% {
+    margin-left: 0px;
   }
 }
 
@@ -182,7 +197,8 @@
 }
 
 #malo,
-#malo2 {
+#malo2,
+#malo3 {
   /* display: flex; */
   flex-direction: row;
   width: 660px;
@@ -190,19 +206,22 @@
 }
 
 #malo li,
-#malo2 li {
+#malo2 li,
+#malo3 li {
   width: 50%;
   background: rgb(226, 252, 229);
 }
 #malo li ul,
-#malo2 li ul {
+#malo2 li ul,
+#malo3 li ul {
   width: 100%;
   margin-left: 20px;
   background: rgb(226, 252, 229);
 }
 
 #malo li ul li,
-#malo2 li ul li {
+#malo2 li ul li,
+#malo3 li ul li {
   width: 100%;
 }
 .slide .dev-skills li {
@@ -235,8 +254,127 @@
   background: rgb(92, 250, 78);
   box-shadow: rgb(88, 228, 76) 1px 1px 10px 6px;
   left: 0;
-  opacity: 0;
-  animation: btn-slide 18s ease infinite;
+  opacity: 1;
+  animation: newpro 26s ease infinite 2s;
+}
+
+@keyframes newpro {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  /* 13% {
+    left: 0;
+    opacity: 0.5;
+  } */
+  12% {
+    left: 0;
+    opacity: 0;
+  }
+  /* 12.5% {
+    left: 70px;
+    opacity: 0;
+  } */
+  12.7% {
+    left: 70px;
+    opacity: 0;
+  }
+  13% {
+    left: 70px;
+    opacity: 1;
+  }
+  /* 20% {
+    left: 70px;
+    opacity: 1;
+  } */
+  24% {
+    left: 70px;
+    opacity: 1;
+  }
+  25% {
+    left: 70px;
+    opacity: 0;
+  }
+  /* 36% {
+    left: 70px;
+    opacity: 0.5;
+  } */
+  26% {
+    left: 140px;
+    opacity: 0;
+  }
+  27% {
+    left: 140px;
+    opacity: 1;
+  }
+  40% {
+    left: 140px;
+    opacity: 1;
+  }
+  45% {
+    left: 140px;
+    opacity: 0;
+  }
+  46% {
+    left: 210px;
+    opacity: 0;
+  }
+  47% {
+    left: 210px;
+    opacity: 1;
+  }
+  /* 55% {
+    left: 140px;
+    opacity: 0;
+  } */
+  /* 56% {
+    left: 210px;
+    opacity: 0;
+  } */
+  57% {
+    left: 210px;
+    opacity: 1;
+  }
+  /* 60% {
+    left: 210px;
+    opacity: 1;
+  } */
+  67% {
+    left: 210px;
+    opacity: 0;
+  }
+  /* 76% {
+    left: 210px;
+    opacity: 0;
+  } */
+  68% {
+    left: 280px;
+    opacity: 0;
+  }
+  69% {
+    left: 280px;
+    opacity: 1;
+  }
+  /* 80% {
+    left: 290px;
+    opacity: 1;
+  } */
+  95% {
+    left: 280px;
+    opacity: 0;
+  }
+  96% {
+    left: 0;
+    opacity: 0;
+  }
+  97% {
+    left: 0;
+    opacity: 1;
+  }
+  /* 98% {
+    left: 0;
+    opacity: 1;
+  } */
 }
 @keyframes btn-slide {
   1% {
@@ -417,6 +555,9 @@
   .slide-wrapper-proj4 {
     margin-left: -2400px;
   }
+  .slide-wrapper-proj5 {
+    margin-left: -3200px;
+  }
 
   .slide {
     float: left;
@@ -437,27 +578,25 @@
   #malo li {
     width: 380px;
   }
+
   @keyframes slide {
-    20% {
+    0% {
       margin-left: 0px;
     }
-    30% {
+    20% {
       margin-left: -800px;
     }
-    50% {
-      margin-left: -800px;
+    40% {
+      margin-left: -1600px;
     }
     60% {
-      margin-left: -1600px;
-    }
-    70% {
-      margin-left: -1600px;
+      margin-left: -2400px;
     }
     80% {
-      margin-left: -2400px;
+      margin-left: -3200px;
     }
-    90% {
-      margin-left: -2400px;
+    95% {
+      margin-left: 0;
     }
   }
 }
@@ -482,6 +621,9 @@
   }
   .slide-wrapper-proj4 {
     margin-left: -1800px;
+  }
+  .slide-wrapper-proj4 {
+    margin-left: -2400px;
   }
 
   #slideshow {
@@ -509,42 +651,42 @@
   } */
 
   #malo,
-  #malo2 {
+  #malo2,
+  #malo3 {
     width: 100%;
   }
 
   #malo li,
-  #malo2 li {
+  #malo2 li,
+  #malo3 li {
     width: 46%;
   }
 
   #malo li ul li,
-  #malo2 li ul li {
+  #malo2 li ul li,
+  #malo3 li ul li {
     /* width: 50%; */
     font-size: 1.5rem;
   }
 
   @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
     20% {
-      margin-left: 0px;
-    }
-    30% {
       margin-left: -600px;
     }
-    50% {
-      margin-left: -600px;
+    40% {
+      margin-left: -1200px;
     }
     60% {
-      margin-left: -1200px;
-    }
-    70% {
-      margin-left: -1200px;
+      margin-left: -1800px;
     }
     80% {
-      margin-left: -1800px;
+      margin-left: -2400px;
     }
-    90% {
-      margin-left: -1800px;
+    95% {
+      margin-left: 0px;
     }
   }
 
@@ -562,6 +704,10 @@
   #slideshow {
     width: 500px;
     margin: 0 auto;
+  }
+
+  .slide-wrapper {
+    animation: slide 20s ease infinite 2s;
   }
   .slide {
     float: left;
@@ -593,26 +739,23 @@
   }
 
   @keyframes slide {
-    20% {
+    0% {
       margin-left: 0px;
     }
-    30% {
+    20% {
       margin-left: -500px;
     }
-    50% {
-      margin-left: -500px;
+    40% {
+      margin-left: -1000px;
     }
     60% {
-      margin-left: -1000px;
-    }
-    70% {
-      margin-left: -1000px;
+      margin-left: -1500px;
     }
     80% {
-      margin-left: -1500px;
+      margin-left: -2000px;
     }
-    90% {
-      margin-left: -1500px;
+    95% {
+      margin-left: 0px;
     }
   }
   /* 
@@ -635,7 +778,8 @@
   .slide-wrapper-proj1,
   .slide-wrapper-proj2,
   .slide-wrapper-proj3,
-  .slide-wrapper-proj4 {
+  .slide-wrapper-proj4,
+  .slide-wrapper-proj5 {
     width: 100%;
     animation: none;
     display: flex;
@@ -659,7 +803,8 @@
   }
 
   #malo,
-  #malo2 {
+  #malo2,
+  #malo3 {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
@@ -670,7 +815,8 @@
 
   .dev-skills,
   #malo li,
-  #malo2 li {
+  #malo2 li,
+  #malo3 li {
     width: 100%;
   }
 
@@ -679,3 +825,8 @@
     display: none;
   }
 }
+
+/* #movie-knight {
+  width: 50px;
+  height: 50px;
+} */
