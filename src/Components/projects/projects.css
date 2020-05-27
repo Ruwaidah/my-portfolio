@@ -474,22 +474,6 @@
 
     margin-top: 30px;
   }
-  /* #malo ul {
-    width: 38%;
-  } */
-
-  #malo,
-  #malo2,
-  #malo3 {
-    width: 100%;
-  }
-
-  #malo li,
-  #malo2 li,
-  #malo3 li {
-    width: 100%;
-    font-size: 1.5rem;
-  }
 
   @keyframes slide {
     0% {
@@ -629,16 +613,6 @@
     border: none;
   }
 
-  /* #malo,
-  #malo2,
-  #malo3 {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 10px 0 60px 0;
-    list-style-type: bullet;
-  } */
   .image-title p {
     font-size: 1.8rem;
   }
@@ -651,8 +625,3 @@
     display: none;
   }
 }
-
-/* #movie-knight {
-  width: 50px;
-  height: 50px;
-} */
