@@ -131,7 +131,7 @@ export default function ContactMe() {
                 name="msg"
                 rows="6"
                 cols="20"
-                placeholder="write your message here .."
+                placeholder="Message..."
                 ref={register({
                   required: "Required",
                 })}
