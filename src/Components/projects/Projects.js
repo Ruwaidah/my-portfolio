@@ -169,7 +169,7 @@ export default function Projects() {
               <li>Team work project.</li>
               <li>Worked in the front end.</li>
               <li>
-                make POST requests to pass data collected from a form to a
+                Make POST requests to pass data collected from a form to a
                 database.
               </li>
               <li>Styled components library for styling. </li>
@@ -240,7 +240,7 @@ export default function Projects() {
             </div>
             <ul className="dev-skills">
               <li>Built with HTML, CSS, React, Node.</li>
-              <li>mobile first application</li>
+              <li>Mobile first application</li>
               <li>
                 user can search for a movies by Zipcode with a third part API.
               </li>
