@@ -40,8 +40,8 @@
 .slide-wrapper {
   background: rgb(226, 252, 229);
   width: 5000px;
-  animation: slide 26s ease infinite 2s;
-  /* animation-delay: 2s; */
+  animation: slide 60s ease infinite 10s;
+  animation-delay: 10s;
 }
 
 .slide-wrapper-proj1 {
@@ -227,7 +227,7 @@
   box-shadow: rgb(88, 228, 76) 1px 1px 10px 6px;
   left: 0;
   opacity: 1;
-  animation: newpro 26s ease infinite 2s;
+  animation: newpro 60s ease infinite 10s;
 }
 
 @keyframes newpro {
@@ -513,7 +513,7 @@
   }
 
   .slide-wrapper {
-    animation: slide 20s ease infinite 2s;
+    animation: slide 60s ease infinite 10s;
   }
   .slide {
     float: left;
