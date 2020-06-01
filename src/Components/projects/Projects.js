@@ -196,7 +196,7 @@ export default function Projects() {
               <li>Redux for state management.</li>
               <li>Express for Routing.</li>
               <li>Knex and PostgreSQL for DataBase.</li>
-              <li>restrict access to resources, for Country user.</li>
+              <li>Restrict access to resources, for Country user.</li>
             </ul>
           </div>
           <div className="slide">
@@ -242,7 +242,7 @@ export default function Projects() {
               <li>Built with HTML, CSS, React, Node.</li>
               <li>Mobile first application</li>
               <li>
-                user can search for a movies by Zipcode with a third part API.
+                User can search for a movies by Zipcode with a third part API.
               </li>
               <li>Use oauth to signup/login with google. </li>
               <li>Redux for state management.</li>
@@ -257,27 +257,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      {/* <div className="dot-btns">
-        <div
-          className={showProject.allproject ? "pro-btn active-btn" : "dontShow"}
-        ></div>
-        <div
-          className={showProject.project1 ? "active pro-btn" : "pro-btn"}
-          onClick={(e) => showOne(e, "proj1")}
-        ></div>
-        <div
-          className={showProject.project2 ? "active pro-btn" : "pro-btn"}
-          onClick={(e) => showOne(e, "proj2")}
-        ></div>
-        <div
-          className={showProject.project3 ? "active pro-btn" : "pro-btn"}
-          onClick={(e) => showOne(e, "proj3")}
-        ></div>
-        <div
-          className={showProject.project4 ? "active pro-btn" : "pro-btn"}
-          onClick={(e) => showOne(e, "proj4")}
-        ></div>
-      </div> */}
     </div>
   );
 }
