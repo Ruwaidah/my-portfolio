@@ -247,7 +247,6 @@ export default function Projects() {
               <li>Use oauth to signup/login with google. </li>
               <li>Redux for state management.</li>
               <li>Filter Movies with the selected time, date, and seats.</li>
-              <li>Use oauth to signup/login with google.</li>
               <li>
                 Use third party API's to show movies that's in theater now
               </li>
