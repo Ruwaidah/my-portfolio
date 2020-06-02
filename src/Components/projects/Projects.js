@@ -197,6 +197,7 @@ export default function Projects() {
               <li>Express for Routing.</li>
               <li>Knex and PostgreSQL for DataBase.</li>
               <li>Restrict access to resources, for Country user.</li>
+              <li>For login: Username: test, Password: test</li>
             </ul>
           </div>
           <div className="slide">
