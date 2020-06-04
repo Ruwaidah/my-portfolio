@@ -75,7 +75,6 @@ export default function Projects() {
     }
   };
 
-  console.log(showProject);
   return (
     <div className="projects-com">
       <div className="projects-header">
