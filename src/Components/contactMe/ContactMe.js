@@ -17,7 +17,6 @@ export default function ContactMe() {
       .post(path, values)
       .then((res) => {
         setLoading(false);
-        console.log(res);
         setMailSent(true);
       })
       .catch((error) => {
