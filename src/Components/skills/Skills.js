@@ -34,9 +34,11 @@ export default function Skills() {
             <li className="lambda">NodeJs</li>
             <li className="lambda">Express NodeJs</li>
             <li className="lambda">Knex</li>
+            <li className="lambda">API</li>
             <li className="lambda">SQLite 3</li>
             <li className="lambda">PostgreSQL</li>
-            <li className="lambda">My SQL</li>
+            <li className="lambda">MySQL</li>
+            <li className="lambda">Relational Database</li>
           </ul>
         </div>
         <div className="skills-box">
