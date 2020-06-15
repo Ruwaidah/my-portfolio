@@ -17,45 +17,35 @@ export default function Skills() {
       </div>
       <h5 className="tech-skills-h5"> Technical Skills: </h5>
       <div className="full-stack">
-        <div className="skills-box">
-          <h4>Front End</h4>
-          <ul className="dev-skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Redux</li>
-          </ul>
-        </div>
-        <div className="skills-box">
-          <h4>Back End</h4>
-          <ul className="dev-skills">
-            <li className="lambda">Python</li>
-            <li className="lambda">NodeJs</li>
-            <li className="lambda">Express NodeJs</li>
-            <li className="lambda">Knex</li>
-            <li className="lambda">API's</li>
-            <li className="lambda">SQLite 3</li>
-            <li className="lambda">PostgreSQL</li>
-            <li className="lambda">MySQL</li>
-            <li className="lambda">Relational Database</li>
-          </ul>
-        </div>
-        <div className="skills-box">
-          <h4>Others</h4>
-          <ul className="dev-skills">
-            <li>Less - Css Compiler</li>
-            <li>Scss- Css Compiler</li>
-            <li>npm</li>
-            <li>Git / Github</li>
-            <li> Deployment Sites</li>
-            <ul className="dev-skills">
+        <ul className="dev-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li className="lambda">Python</li>
+          <li className="lambda">NodeJs</li>
+          <li className="lambda">Express NodeJs</li>
+          <li className="lambda">Knex</li>
+          <li className="lambda">API's</li>
+          <li className="lambda">SQLite 3</li>
+          <li className="lambda">PostgreSQL</li>
+          <li className="lambda">MySQL</li>
+          <li className="lambda">Relational Database</li>
+          <li>Less - Css Compiler</li>
+          <li>Scss- Css Compiler</li>
+          <li>npm</li>
+          <li>Git / Github</li>
+          <li className="deployment">
+            {" "}
+            Deployment Sites
+            <ul>
               <li className="lambda">Heroku</li>
               <li className="lambda">Vercel</li>
               <li className="lambda">Netlify</li>
             </ul>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
