@@ -64,7 +64,7 @@ ul li {
   justify-content: space-around;
 }
 
-.full-stack .skills-box {
+/* .full-stack .skills-box {
   border: rgb(0, 0, 0) 2px solid;
   width: 40%;
   display: flex;
@@ -73,27 +73,39 @@ ul li {
   padding: 24px;
   border-radius: 4px;
   margin-bottom: 4%;
-}
+} */
 
-.skills-box h4 {
+/* .skills-box h4 {
   width: 100%;
   padding-bottom: 20px;
   background: #f8f8e6;
   font-size: 2.2rem;
   text-align: center;
-}
+} */
 
-.dev-skills {
-  margin-left: 6%;
+.skills-com .full-stack .dev-skills {
+  /* margin-left: 6%; */
   display: flex;
   background: #f8f8e6;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dev-skills .deployment {
+  background: #f8f8e6;
+  width: 100%;
+}
+
+.deployment ul {
+  background: #f8f8e6;
 }
 
 .dev-skills li {
   background: #f8f8e6;
-  margin: 0;
+  margin: 10px;
+  width: 30%;
   text-align: start;
+
   /* font-size: 1.8rem; */
 }
 
@@ -114,14 +126,6 @@ ul li {
     justify-content: space-evenly;
   }
 
-  .full-stack .skills-box {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-
   .dev-skills {
     width: 100%;
     display: flex;
@@ -130,7 +134,11 @@ ul li {
     justify-content: space-between;
   }
 
-  .full-stack .skills-box .dev-skills li {
+  .skills-com .full-stack .dev-skills {
+    width: 80%;
+  }
+
+  .full-stack .dev-skills li {
     margin-left: 10px;
     width: 42%;
     font-size: 1.6rem;
@@ -149,6 +157,10 @@ ul li {
     font-size: 1.6rem;
     padding-bottom: 10px;
   }
+
+  .higher-ed .graduate {
+    font-size: 14px;
+  }
   .higher-ed ul li {
     font-size: 1.6rem;
   }
@@ -156,7 +168,7 @@ ul li {
     width: 90%;
   }
 
-  .full-stack .skills-box .dev-skills li {
+  .full-stack .dev-skills li {
     width: 100%;
   }
 }
